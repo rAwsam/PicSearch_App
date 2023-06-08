@@ -14,6 +14,7 @@
 		9357C8002A31ACD1008B2AA9 /* PicSearch_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9357C7FE2A31ACD1008B2AA9 /* PicSearch_App.xcdatamodeld */; };
 		9357C8022A31ACD3008B2AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9357C8012A31ACD3008B2AA9 /* Assets.xcassets */; };
 		9357C8052A31ACD3008B2AA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9357C8032A31ACD3008B2AA9 /* LaunchScreen.storyboard */; };
+		9357C80D2A31B309008B2AA9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9357C80C2A31B309008B2AA9 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9357C8012A31ACD3008B2AA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9357C8042A31ACD3008B2AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9357C8062A31ACD3008B2AA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9357C80C2A31B309008B2AA9 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				9357C8032A31ACD3008B2AA9 /* LaunchScreen.storyboard */,
 				9357C8062A31ACD3008B2AA9 /* Info.plist */,
 				9357C7FE2A31ACD1008B2AA9 /* PicSearch_App.xcdatamodeld */,
+				9357C80C2A31B309008B2AA9 /* SearchViewController.swift */,
 			);
 			path = PicSearch_App;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9357C80D2A31B309008B2AA9 /* SearchViewController.swift in Sources */,
 				9357C8002A31ACD1008B2AA9 /* PicSearch_App.xcdatamodeld in Sources */,
 				9357C7FA2A31ACD1008B2AA9 /* ViewController.swift in Sources */,
 				9357C7F62A31ACD1008B2AA9 /* AppDelegate.swift in Sources */,
