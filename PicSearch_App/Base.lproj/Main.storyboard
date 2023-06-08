@@ -31,7 +31,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="102" y="4"/>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="5pV-8M-xig">
@@ -41,8 +41,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Rl-RM-98l">
-                                <rect key="frame" x="36" y="72.666666666666671" width="62" height="20.333333333333329"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Rl-RM-98l">
+                                <rect key="frame" x="36" y="80.666666666666629" width="62" height="20.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="62" id="9gx-XF-rcA"/>
                                 </constraints>
@@ -56,8 +56,8 @@
                                 <color key="textColor" red="0.2297804648" green="0.20796683220000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <searchBar contentMode="redraw" placeholder="enter the image name" translatesAutoresizingMaskIntoConstraints="NO" id="9FQ-w4-5Wb">
-                                <rect key="frame" x="16" y="115" width="361" height="56"/>
+                            <searchBar contentMode="redraw" misplaced="YES" placeholder="enter the image name" translatesAutoresizingMaskIntoConstraints="NO" id="9FQ-w4-5Wb">
+                                <rect key="frame" x="16" y="115" width="282" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5a-37-RN3">
@@ -66,12 +66,40 @@
                                 <color key="textColor" red="0.2297804648" green="0.20796683220000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8D-Bp-fbb">
+                                <rect key="frame" x="301" y="126" width="78" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Search"/>
+                                <connections>
+                                    <action selector="SearchButton:" destination="BS8-cy-9F5" eventType="touchUpInside" id="k5J-Wa-6VL"/>
+                                </connections>
+                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pqa-gW-Cfo">
                                 <rect key="frame" x="16" y="254" width="361" height="564"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="564" id="dfB-1G-c0U"/>
                                 </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="9Xh-w3-t7B">
+                                        <rect key="frame" x="0.0" y="50" width="361" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Xh-w3-t7B" id="GH6-Tu-8SS">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9RN-s2-Cuh">
+                                                    <rect key="frame" x="39" y="11" width="232" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="88b-dY-z3g"/>
@@ -92,6 +120,11 @@
                             <constraint firstItem="gGJ-DO-g57" firstAttribute="leading" secondItem="7Rl-RM-98l" secondAttribute="trailing" constant="26" id="yaP-0n-mWF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="SearchBar" destination="9FQ-w4-5Wb" id="ya7-j6-etX"/>
+                        <outlet property="SearchHistoryTable" destination="pqa-gW-Cfo" id="dYe-JC-10r"/>
+                        <outlet property="nameLabel" destination="7Rl-RM-98l" id="ocZ-Tq-Qjp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iXQ-QM-BIe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
